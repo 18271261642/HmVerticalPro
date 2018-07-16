@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/comment_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="气瓶二维码"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:id="@+id/initScanBotEdit"
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:focusable="false"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint="扫描获取"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="制造单位:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="钢印编号:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:id="@+id/editText"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginRight="8dp"
+                   android:layout_weight="2"
+                   android:background="@mipmap/edit_round_bg"
+                   android:gravity="center|left"
+                   android:hint=""
+                   android:maxLines="1"
+                   android:paddingLeft="5dp"
+                   android:singleLine="true" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="出厂日期:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="内部编号:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="气瓶瓶种:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="气瓶型号:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="充装介质:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="公称工作压力:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="水试验压力:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="重量:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="容积:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="3dp">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="设计壁厚:"
+                   android:textSize="18sp" />
+
+
+               <EditText
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:singleLine="true"
+                   android:maxLines="1"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:background="@mipmap/edit_round_bg"
+                   android:layout_marginRight="8dp"
+                   android:paddingLeft="5dp"
+                   android:gravity="center|left"
+                   android:hint=""/>
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/initSubBtn"
+               android:layout_width="match_parent"
+               android:text="确定"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:background="@color/theme_color"
+               android:layout_marginTop="20dp"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

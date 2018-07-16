@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/formalServerTv"
+        android:layout_width="match_parent"
+        android:text="正式服"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/layout_click"
+        android:textSize="@dimen/_18sp"
+        android:padding="@dimen/_10dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg"/>
+
+    <TextView
+        android:id="@+id/testServerTv"
+        android:layout_width="match_parent"
+        android:text="测试服"
+        android:background="@drawable/layout_click"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_18sp"
+        android:padding="@dimen/_10dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg"/>
+    <TextView
+        android:id="@+id/localServerTv"
+        android:layout_width="match_parent"
+        android:text="本地服"
+        android:background="@drawable/layout_click"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_18sp"
+        android:padding="@dimen/_10dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg"/>
+
+    <TextView
+        android:id="@+id/calcleTv"
+        android:layout_width="match_parent"
+        android:text="取消"
+        android:background="@drawable/layout_click"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_18sp"
+        android:padding="@dimen/_10dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

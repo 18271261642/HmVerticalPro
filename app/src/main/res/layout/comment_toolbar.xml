@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="3dp"
+    android:background="@color/toolbar_color"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/commentbackImg"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center|left"
+            android:background="@mipmap/icon_title_bg"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/commentTitleTv"
+        android:layout_width="0dp"
+        android:text=""
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/commentRightTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

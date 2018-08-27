@@ -257,13 +257,14 @@ public class OperatorCheckOrderActivity extends BaseActivity implements RequestV
 //                        switchCode = 2;
 //                        break;
 //                }
-
+                switchCode = position;
                 chooseDateTest(position,showSpinnerDateTv.getText().toString().trim());
 
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                switchCode = 0;
                 chooseDateTest(0,showSpinnerDateTv.getText().toString().trim());
             }
         });
@@ -343,6 +344,7 @@ public class OperatorCheckOrderActivity extends BaseActivity implements RequestV
         String nexD = checkDetailBean.getNextCheckDate() + "";
         if (!Utils.isEmpty(nexD) && !nexD.equals("0")) {
             showSpinnerDateTv.setText("" + sdf.format(new Date(checkDetailBean.getNextCheckDate())));
+            switchCode = 0;
             nextCheckDate = sdf.format(new Date(checkDetailBean.getNextCheckDate()));
             operatorDateSpinner.setSelection(0,true);
             if(timePickerDialog != null){
@@ -352,6 +354,7 @@ public class OperatorCheckOrderActivity extends BaseActivity implements RequestV
         //截止使用日期
         String lastD = checkDetailBean.getLastUseDate() + "";
         if (!Utils.isEmpty(lastD) && !lastD.equals("0")) {
+            switchCode = 1;
             showSpinnerDateTv.setText("" + sdf.format(new Date(checkDetailBean.getLastUseDate())));
             lastUseDate = sdf.format(new Date(checkDetailBean.getLastUseDate()));
             operatorDateSpinner.setSelection(1,true);
@@ -361,6 +364,7 @@ public class OperatorCheckOrderActivity extends BaseActivity implements RequestV
         //终止使用日期
         String endD = checkDetailBean.getEndUseDate() + "";
         if (!Utils.isEmpty(endD) && !endD.equals("0")) {
+            switchCode = 2;
             operatorDateSpinner.setSelection(2,true);
             showSpinnerDateTv.setText("" + sdf.format(new Date(checkDetailBean.getEndUseDate())));
             endUseDate = sdf.format(new Date(checkDetailBean.getEndUseDate()));
@@ -518,6 +522,7 @@ public class OperatorCheckOrderActivity extends BaseActivity implements RequestV
     }
 
     private void chooseDateTest(int index,String chooseDate) {
+        Logger.e("----spinner="+index+"---data="+chooseDate);
         switch (index) {
             case 0x00:
                 clearDate();

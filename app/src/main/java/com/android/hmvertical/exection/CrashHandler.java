@@ -231,7 +231,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         mapJson.put("logmsg", messageError);// 日志信息
         mapJson.put("source_type", source_type);// 错误类型
         mapJson.put("version", AppUtils.getVersionCode(mContext) + "");//版本号
-        //sendLog(mapToJson(mapJson));
+        sendLog(mapToJson(mapJson));
     }
 
     //异常日志上传后台请求

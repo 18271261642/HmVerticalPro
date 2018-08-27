@@ -30,7 +30,7 @@
             android:id="@+id/inputOrderDetailEdit"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:hint="输入详情编号搜索"
+            android:hint="输入搜索"
             android:layout_gravity="center"
             android:layout_margin="@dimen/_5dp"
             android:layout_height="wrap_content" />

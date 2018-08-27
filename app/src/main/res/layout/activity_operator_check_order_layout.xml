@@ -981,7 +981,7 @@
                    <RadioButton
                        android:id="@+id/rb2"
                        android:layout_width="match_parent"
-                       android:text="瓶体线腐蚀处的剩余壁厚小于设计壁厚"
+                       android:text="瓶体面腐蚀处的剩余壁厚小于设计壁厚"
                        android:textSize="@dimen/_17sp"
                        android:layout_margin="@dimen/_3dp"
                        android:layout_height="wrap_content" />
@@ -991,7 +991,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:layout_margin="@dimen/_3dp"
-                       android:text="线腐蚀"
+                       android:text="瓶体线腐蚀处的剩余壁厚少于设计壁厚"
                        android:textSize="@dimen/_17sp" />
 
                    <RadioButton

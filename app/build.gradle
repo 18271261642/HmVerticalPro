@@ -7,8 +7,8 @@ android {
         applicationId "com.android.hmvertical"
         minSdkVersion 18
         targetSdkVersion 27
-        versionCode 10
-        versionName "v2.0->180713"
+        versionCode 12
+        versionName "v2.2->180717"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true}}
         }
